@@ -1,0 +1,83 @@
+/* Applying Inter font to the whole body */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        :root {
+            --color-principal: #3c8b95;
+            --color-oscuro: #0e0e0e;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: var(--color-oscuro);
+        }
+
+        header {
+            background: #fff !important;
+            color: var(--color-oscuro);
+        }
+
+        nav a {
+            color: var(--color-oscuro);
+        }
+        nav a:hover {
+            color: var(--color-principal);
+        }
+
+        .btn-principal, .bg-blue-600 {
+            background-color: var(--color-principal) !important;
+            color: #fff !important;
+        }
+
+        .btn-principal:hover, .hover\:bg-blue-700:hover {
+            background-color: var(--color-oscuro) !important;
+        }
+
+        .text-blue-600, .text-blue-700 {
+            color: var(--color-principal) !important;
+        }
+
+        .bg-blue-50, .bg-blue-100 {
+            background-color: #e6f4f6 !important;
+            color: var(--color-principal) !important;
+        }
+
+        /* Custom styles for slider */
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffffff;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: var(--color-principal) !important;
+        }
+
+        /* Custom styles for subtle animations */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        body, html {
+            overflow-x: hidden !important;
+        }
+
+        .swiper-container {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .swiper-initialized {
+            opacity: 1;
+        }
